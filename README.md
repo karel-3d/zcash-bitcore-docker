@@ -17,7 +17,7 @@ You need to get the binary only once.
 
 Three ways of getting the zcashd binary.
 
-* install [git lfs](https://git-lfs.github.com/) and just clone this repo, it will be in `zcashd` auto-magically
+* install [git lfs](https://git-lfs.github.com/) before cloning this repo, it will be in `zcashd` auto-magically
 
 OR 
 
