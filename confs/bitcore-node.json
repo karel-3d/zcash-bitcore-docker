@@ -1,0 +1,37 @@
+{
+  "network": "livenet",
+  "port": 3002,
+  "services": [
+    "web",
+    "bitcoind",
+    "insight-api-zcash",
+    "insight-ui-zcash"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "spawn": {
+        "datadir": "/datadir",
+        "exec": "/zcashd"
+      },
+      "connect": [
+        {
+          "rpchost": "127.0.0.1",
+          "rpcport": 8232,
+          "rpcuser": "bitcoin",
+          "rpcpassword": "local321",
+          "zmqpubrawtx": "tcp://127.0.0.1:28332",
+          "zmqpubhashblock": "tcp://127.0.0.1:28332"
+        }
+      ]
+    },
+    "insight-ui-zcash": {
+      "routePrefix": "",
+      "apiPrefix": "api"
+    },
+    "insight-api-zcash": {
+      "routePrefix": "api",
+      "enableCache": true
+    }
+  }
+}
+
