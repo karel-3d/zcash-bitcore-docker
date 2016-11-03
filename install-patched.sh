@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 docker build -t zcash .
 
 docker run -t \
