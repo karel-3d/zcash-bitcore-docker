@@ -33,11 +33,15 @@ Install bitcore
 
 `./install-patched.sh` for installing my version of bitcore libraries, with a few patches for socket.io communication.
 
-Clean up node modules between installations.
+The parameters will be downloaded into ./params.
+
+Clean up node modules between installations (see below).
 
 Clean up
 --------
 `sudo rm -rf bitcore` for cleaning up node modules (blockchain will stay). You will need to install again.
+
+`sudo rm -rf params` for deleting zcash params.
 
 `sudo rm -rf datadir` for deleting blockchain.
 
@@ -53,4 +57,4 @@ Don't run more than one insight.
 
 Stopping
 --------
-`docker stop zcash`
+`docker stop zcash && docker rm zcash`
