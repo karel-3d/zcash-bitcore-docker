@@ -16,7 +16,7 @@ You have to download parameters first.
 
 * `./fetch_params`
 
-Two large files, 1GB total, will appear in `~/.zcash-params/`
+Two large files, 1GB total, will be downloaded sloooowly into `~/.zcash-params/` (from amazon aws).
 
 Now you can run `./zcashd` from src.
 
