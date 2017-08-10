@@ -15,17 +15,7 @@ Getting the binary
 ------------------
 You need to get the binary only once.
 
-Three ways of getting the zcashd binary.
-
-* install [git lfs](https://git-lfs.github.com/) before cloning this repo, it will be in `zcashd` auto-magically
-
-OR 
-
-* `rm zcashd && wget https://github.com/runn1ng/zcash-bitcore-docker/raw/master/zcashd` 
-
-OR
-
-* build it in docker by `cd build && ./run.sh`; note that it takes quite a long time to build.
+Build it in docker by `cd build && ./run.sh`; note that it takes quite a long time to build.
 
 Install bitcore
 -------
